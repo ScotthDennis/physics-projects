@@ -11,8 +11,8 @@ m_earth=5.9742e24 #kg
 AU=1.495978707e11 #m
 day=86400 #s
 year=365.25 #days
-tmax=1*year*day
-dt=5000000 #losses accuracy quicker for inner planets 
+tmax=5*year*day
+dt=500000 #losses accuracy quicker for inner planets 
 
 n=3 #number of bodies (including sun)
 
@@ -28,9 +28,9 @@ m.append(m_sun); name.append("Sun");x.append(0) #0
 # m.append(0.642e24); name.append("Mars");x.append(228e9) #4
 m.append(1.8986e27); name.append("Jupiter");x.append(778.5e9) #5 
 # m.append(568e24); name.append("Saturn");x.append(1432e9) #6
-# m.append(86.8e24); name.append("Uranus");x.append(2867e9) #7
+m.append(86.8e24); name.append("Uranus");x.append(2867e9) #7
 # m.append(102e24); name.append("Neptune");x.append(4515e9) #8
-m.append(0.95e20); name.append("astroid"); x.append(70) #9
+#m.append(0.95e20); name.append("astroid"); x.append(70) #9
 
 y=[0]*n
 vx=[0.0]*n
@@ -184,4 +184,5 @@ print("--- %s seconds ---" % (time.time() - start_time))
 
 # kirk wood gaps may need to be researched with smaller orbits for effect to be found 
 # relatively quickly (still 100s of years )
+
 
