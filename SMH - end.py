@@ -1,4 +1,5 @@
 #student number is 40325280
+
 import numpy as np
 k=52+1 #53   spring constant
 m=80+100 #180    mass 
@@ -100,3 +101,4 @@ while((dtmax-dtmin)>1e-9):
     else:
         dtmin=dt
 print("max time step for Runge Kutta method is",dt)
+
