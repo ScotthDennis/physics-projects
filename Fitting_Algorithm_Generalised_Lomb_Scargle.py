@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 import numpy as np
 
@@ -44,4 +43,5 @@ def GLS(t,y,sig,period=np.logspace(-1.,1.4,int(1e5))):
         p_om[i]=(SS*YC**2+CC*YS**2-2*CS*YC*YS)/(YY*D)
         a_om[i]=(YC*SS-YS*CS)/D
         b_om[i]=(YS*CC-YC*CS)/D
+
     return p_om,a_om,b_om
